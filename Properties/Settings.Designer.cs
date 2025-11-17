@@ -33,5 +33,16 @@ namespace QLTV.Properties {
                 return ((string)(this["QLTVConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-MVG881B;Initial Catalog=QLTV;Integrated Security=True;TrustSe" +
+            "rverCertificate=True")]
+        public string QLTVConnectionString1 {
+            get {
+                return ((string)(this["QLTVConnectionString1"]));
+            }
+        }
     }
 }
