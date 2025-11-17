@@ -59,6 +59,7 @@
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.rbnHT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbpTK = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpBackup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -72,13 +73,13 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
             // 
+            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(26, 24, 26, 24);
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -113,14 +114,16 @@
             this.barButtonItem9,
             this.barButtonItem10});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbon.MaxItemId = 35;
             this.ribbon.Name = "ribbon";
+            this.ribbon.OptionsMenuMinWidth = 283;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbnHT,
             this.rbnRpt});
             this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateTimeOffsetEdit1});
-            this.ribbon.Size = new System.Drawing.Size(1089, 193);
+            this.ribbon.Size = new System.Drawing.Size(933, 158);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btnLogin
@@ -128,12 +131,14 @@
             this.btnLogin.Caption = "Đăng nhập";
             this.btnLogin.Id = 1;
             this.btnLogin.Name = "btnLogin";
+            this.btnLogin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLogin_ItemClick);
             // 
             // btnLogout
             // 
             this.btnLogout.Caption = "Đăng xuất";
             this.btnLogout.Id = 2;
             this.btnLogout.Name = "btnLogout";
+            this.btnLogout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLogout_ItemClick);
             // 
             // btnDMTL
             // 
@@ -268,6 +273,7 @@
             this.barButtonItem2.Caption = "Danh mục tài liệu";
             this.barButtonItem2.Id = 25;
             this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // barButtonItem4
             // 
@@ -304,6 +310,12 @@
             this.barButtonItem9.Caption = "Độc giả vi phạm";
             this.barButtonItem9.Id = 32;
             this.barButtonItem9.Name = "barButtonItem9";
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "Danh mục tác giả";
+            this.barButtonItem10.Id = 34;
+            this.barButtonItem10.Name = "barButtonItem10";
             // 
             // rbnHT
             // 
@@ -385,10 +397,11 @@
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
             this.ribbonStatusBar.ItemLinks.Add(this.barEditItem1);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 646);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 525);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1089, 30);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(933, 24);
             // 
             // ribbonPageGroup8
             // 
@@ -405,23 +418,20 @@
             this.barButtonItem3.Id = 3;
             this.barButtonItem3.Name = "barButtonItem3";
             // 
-            // barButtonItem10
-            // 
-            this.barButtonItem10.Caption = "Danh mục tác giả";
-            this.barButtonItem10.Id = 34;
-            this.barButtonItem10.Name = "barButtonItem10";
-            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1089, 676);
+            this.ClientSize = new System.Drawing.Size(933, 549);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMain";
             this.Ribbon = this.ribbon;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "frmMain";
+            this.Text = "Quản lý thư viện";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).EndInit();
             this.ResumeLayout(false);
