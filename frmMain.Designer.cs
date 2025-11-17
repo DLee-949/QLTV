@@ -29,47 +29,52 @@
         private void InitializeComponent()
         {
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.rbnHT = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rbpTK = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbnSach = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rbpSearch = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbnMuon = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbnDocgia = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbnTacgia = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbnRpt = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.btnLogin = new DevExpress.XtraBars.BarButtonItem();
             this.btnLogout = new DevExpress.XtraBars.BarButtonItem();
-            this.rbpBackup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnDMTL = new DevExpress.XtraBars.BarButtonItem();
-            this.rbpFn = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnAddTL = new DevExpress.XtraBars.BarButtonItem();
             this.btnDeleteTL = new DevExpress.XtraBars.BarButtonItem();
             this.btnEditTL = new DevExpress.XtraBars.BarButtonItem();
             this.btnMuon = new DevExpress.XtraBars.BarButtonItem();
             this.btnCTMuon = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnSL = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhat = new DevExpress.XtraBars.BarButtonItem();
             this.btnCTPhat = new DevExpress.XtraBars.BarButtonItem();
             this.btnDMDocgia = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnAddDocgia = new DevExpress.XtraBars.BarButtonItem();
             this.btnDeleteDocgia = new DevExpress.XtraBars.BarButtonItem();
             this.btnEditDocgia = new DevExpress.XtraBars.BarButtonItem();
             this.btnTacgia = new DevExpress.XtraBars.BarButtonItem();
             this.btnRptNewDocgia = new DevExpress.XtraBars.BarButtonItem();
             this.btnRptPhat = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnRptSLMuon = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemDateTimeOffsetEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.rbnHT = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rbpTK = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbpBackup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbnRpt = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -96,113 +101,27 @@
             this.btnRptNewDocgia,
             this.btnRptPhat,
             this.btnRptSLMuon,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.barStaticItem1,
+            this.barEditItem1,
+            this.barButtonItem2,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonItem6,
+            this.barButtonItem7,
+            this.barButtonItem8,
+            this.barButtonItem9,
+            this.barButtonItem10});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 22;
+            this.ribbon.MaxItemId = 35;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbnHT,
-            this.rbnSach,
-            this.rbnMuon,
-            this.rbnDocgia,
-            this.rbnTacgia,
             this.rbnRpt});
+            this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemDateTimeOffsetEdit1});
             this.ribbon.Size = new System.Drawing.Size(1089, 193);
             this.ribbon.StatusBar = this.ribbonStatusBar;
-            // 
-            // rbnHT
-            // 
-            this.rbnHT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rbpTK,
-            this.rbpBackup});
-            this.rbnHT.Name = "rbnHT";
-            this.rbnHT.Text = "Hệ thống";
-            // 
-            // rbpTK
-            // 
-            this.rbpTK.ItemLinks.Add(this.btnLogin);
-            this.rbpTK.ItemLinks.Add(this.btnLogout);
-            this.rbpTK.Name = "rbpTK";
-            this.rbpTK.Text = "Tài khoản";
-            // 
-            // rbnSach
-            // 
-            this.rbnSach.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rbpSearch,
-            this.rbpFn,
-            this.ribbonPageGroup2});
-            this.rbnSach.Name = "rbnSach";
-            this.rbnSach.Text = "Quản lý sách";
-            // 
-            // rbpSearch
-            // 
-            this.rbpSearch.ItemLinks.Add(this.btnDMTL);
-            this.rbpSearch.Name = "rbpSearch";
-            this.rbpSearch.Text = "Tra cứu";
-            // 
-            // rbnMuon
-            // 
-            this.rbnMuon.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup1});
-            this.rbnMuon.Name = "rbnMuon";
-            this.rbnMuon.Text = "Quản lý mượn trả";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnMuon);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnCTMuon);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "Phiếu mượn";
-            // 
-            // rbnDocgia
-            // 
-            this.rbnDocgia.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup4,
-            this.ribbonPageGroup7});
-            this.rbnDocgia.Name = "rbnDocgia";
-            this.rbnDocgia.Text = "Quản lý độc giả";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnDMDocgia);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Tra cứu";
-            // 
-            // rbnTacgia
-            // 
-            this.rbnTacgia.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5});
-            this.rbnTacgia.Name = "rbnTacgia";
-            this.rbnTacgia.Text = "Quản lý tác giả";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnTacgia);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "Tác giả";
-            // 
-            // rbnRpt
-            // 
-            this.rbnRpt.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup6,
-            this.ribbonPageGroup9});
-            this.rbnRpt.Name = "rbnRpt";
-            this.rbnRpt.Text = "Báo cáo thống kê";
-            // 
-            // ribbonPageGroup6
-            // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnRptNewDocgia);
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnRptPhat);
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "Độc giả";
-            // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 646);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1089, 30);
             // 
             // btnLogin
             // 
@@ -216,25 +135,11 @@
             this.btnLogout.Id = 2;
             this.btnLogout.Name = "btnLogout";
             // 
-            // rbpBackup
-            // 
-            this.rbpBackup.Name = "rbpBackup";
-            this.rbpBackup.Text = "Sao lưu & khôi phục";
-            // 
             // btnDMTL
             // 
             this.btnDMTL.Caption = "Danh mục tài liệu";
             this.btnDMTL.Id = 3;
             this.btnDMTL.Name = "btnDMTL";
-            // 
-            // rbpFn
-            // 
-            this.rbpFn.AllowTextClipping = false;
-            this.rbpFn.ItemLinks.Add(this.btnAddTL);
-            this.rbpFn.ItemLinks.Add(this.btnDeleteTL);
-            this.rbpFn.ItemLinks.Add(this.btnEditTL);
-            this.rbpFn.Name = "rbpFn";
-            this.rbpFn.Text = "Thêm, sửa & xoá tài liệu";
             // 
             // btnAddTL
             // 
@@ -266,20 +171,6 @@
             this.btnCTMuon.Id = 9;
             this.btnCTMuon.Name = "btnCTMuon";
             // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnPhat);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnCTPhat);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Phiếu phạt";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnSL);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Tồn kho";
-            // 
             // btnSL
             // 
             this.btnSL.Caption = "Tồn kho";
@@ -303,23 +194,6 @@
             this.btnDMDocgia.Caption = "Danh mục độc giả";
             this.btnDMDocgia.Id = 13;
             this.btnDMDocgia.Name = "btnDMDocgia";
-            // 
-            // ribbonPageGroup7
-            // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.btnAddDocgia);
-            this.ribbonPageGroup7.ItemLinks.Add(this.btnDeleteDocgia);
-            this.ribbonPageGroup7.ItemLinks.Add(this.btnEditDocgia);
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.Text = "Thêm, sửa & xoá độc giả";
-            // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.AllowTextClipping = false;
-            this.ribbonPageGroup8.ItemLinks.Add(this.btnAddTL);
-            this.ribbonPageGroup8.ItemLinks.Add(this.btnDeleteTL);
-            this.ribbonPageGroup8.ItemLinks.Add(this.btnEditTL);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "Thêm, sửa & xoá tài liệu";
             // 
             // btnAddDocgia
             // 
@@ -357,13 +231,6 @@
             this.btnRptPhat.Id = 19;
             this.btnRptPhat.Name = "btnRptPhat";
             // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup9.ItemLinks.Add(this.btnRptSLMuon);
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "Tài liệu";
-            // 
             // btnRptSLMuon
             // 
             this.btnRptSLMuon.Caption = "Thống kê số sách mượn theo đầu sách";
@@ -375,6 +242,174 @@
             this.barButtonItem1.Caption = "Báo cáo số lượng sách tồn kho";
             this.barButtonItem1.Id = 21;
             this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "barStaticItem1";
+            this.barStaticItem1.Id = 22;
+            this.barStaticItem1.Name = "barStaticItem1";
+            // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "barEditItem1";
+            this.barEditItem1.Edit = this.repositoryItemDateTimeOffsetEdit1;
+            this.barEditItem1.Id = 23;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemDateTimeOffsetEdit1
+            // 
+            this.repositoryItemDateTimeOffsetEdit1.AutoHeight = false;
+            this.repositoryItemDateTimeOffsetEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateTimeOffsetEdit1.Name = "repositoryItemDateTimeOffsetEdit1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Danh mục tài liệu";
+            this.barButtonItem2.Id = 25;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Tồn kho";
+            this.barButtonItem4.Id = 26;
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Phiếu mượn";
+            this.barButtonItem5.Id = 27;
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Phiếu phạt";
+            this.barButtonItem6.Id = 28;
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Danh mục độc giả";
+            this.barButtonItem7.Id = 29;
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "Thống kê độc giả";
+            this.barButtonItem8.Id = 31;
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "Độc giả vi phạm";
+            this.barButtonItem9.Id = 32;
+            this.barButtonItem9.Name = "barButtonItem9";
+            // 
+            // rbnHT
+            // 
+            this.rbnHT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rbpTK,
+            this.rbpBackup,
+            this.ribbonPageGroup10,
+            this.ribbonPageGroup11,
+            this.ribbonPageGroup12,
+            this.ribbonPageGroup13});
+            this.rbnHT.Name = "rbnHT";
+            this.rbnHT.Text = "Hệ thống";
+            // 
+            // rbpTK
+            // 
+            this.rbpTK.ItemLinks.Add(this.btnLogin);
+            this.rbpTK.ItemLinks.Add(this.btnLogout);
+            this.rbpTK.Name = "rbpTK";
+            this.rbpTK.Text = "Hệ thống";
+            // 
+            // rbpBackup
+            // 
+            this.rbpBackup.ItemLinks.Add(this.barButtonItem2);
+            this.rbpBackup.ItemLinks.Add(this.barButtonItem4);
+            this.rbpBackup.Name = "rbpBackup";
+            this.rbpBackup.Text = "Quản lý tài liệu";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.AllowTextClipping = false;
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "Quản lý mượn trả";
+            // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            this.ribbonPageGroup11.Text = "Quản lý độc giả";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            this.ribbonPageGroup12.Text = "Quản lý tác giả";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.AllowTextClipping = false;
+            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            this.ribbonPageGroup13.Text = "Báo cáo thống kê";
+            // 
+            // rbnRpt
+            // 
+            this.rbnRpt.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup6,
+            this.ribbonPageGroup9});
+            this.rbnRpt.Name = "rbnRpt";
+            this.rbnRpt.Text = "Báo cáo thống kê";
+            // 
+            // ribbonPageGroup6
+            // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.btnRptNewDocgia);
+            this.ribbonPageGroup6.ItemLinks.Add(this.btnRptPhat);
+            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            this.ribbonPageGroup6.Text = "Độc giả";
+            // 
+            // ribbonPageGroup9
+            // 
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup9.ItemLinks.Add(this.btnRptSLMuon);
+            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            this.ribbonPageGroup9.Text = "Tài liệu";
+            // 
+            // ribbonStatusBar
+            // 
+            this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
+            this.ribbonStatusBar.ItemLinks.Add(this.barEditItem1);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 646);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbon;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1089, 30);
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.AllowTextClipping = false;
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnAddTL);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnDeleteTL);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnEditTL);
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "Thêm, sửa & xoá tài liệu";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Danh mục tài liệu";
+            this.barButtonItem3.Id = 3;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "Danh mục tác giả";
+            this.barButtonItem10.Id = 34;
+            this.barButtonItem10.Name = "barButtonItem10";
             // 
             // frmMain
             // 
@@ -388,6 +423,7 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "frmMain";
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,14 +435,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage rbnHT;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbpTK;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
-        private DevExpress.XtraBars.Ribbon.RibbonPage rbnSach;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbpSearch;
-        private DevExpress.XtraBars.Ribbon.RibbonPage rbnMuon;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.Ribbon.RibbonPage rbnDocgia;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-        private DevExpress.XtraBars.Ribbon.RibbonPage rbnTacgia;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPage rbnRpt;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem btnLogin;
@@ -418,14 +446,10 @@
         private DevExpress.XtraBars.BarButtonItem btnEditTL;
         private DevExpress.XtraBars.BarButtonItem btnMuon;
         private DevExpress.XtraBars.BarButtonItem btnCTMuon;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbpFn;
         private DevExpress.XtraBars.BarButtonItem btnSL;
         private DevExpress.XtraBars.BarButtonItem btnPhat;
         private DevExpress.XtraBars.BarButtonItem btnCTPhat;
         private DevExpress.XtraBars.BarButtonItem btnDMDocgia;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.BarButtonItem btnAddDocgia;
         private DevExpress.XtraBars.BarButtonItem btnDeleteDocgia;
         private DevExpress.XtraBars.BarButtonItem btnEditDocgia;
@@ -436,5 +460,21 @@
         private DevExpress.XtraBars.BarButtonItem btnRptSLMuon;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit repositoryItemDateTimeOffsetEdit1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
     }
 }
