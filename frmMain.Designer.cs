@@ -54,9 +54,9 @@
             this.repositoryItemDateTimeOffsetEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPhieuMuon = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPhieuPhat = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDMDG = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
@@ -79,6 +79,7 @@
             // 
             // ribbon
             // 
+            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(37);
             this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(26, 24, 26, 24);
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -107,13 +108,17 @@
             this.barEditItem1,
             this.barButtonItem2,
             this.barButtonItem4,
-            this.barButtonItem5,
-            this.barButtonItem6,
-            this.barButtonItem7,
+            this.btnPhieuMuon,
+            this.btnPhieuPhat,
+            this.btnDMDG,
             this.barButtonItem8,
             this.barButtonItem9,
             this.barButtonItem10});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ribbon.MaxItemId = 35;
+            this.ribbon.Name = "ribbon";
+            this.ribbon.OptionsMenuMinWidth = 412;
             this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbon.MaxItemId = 35;
             this.ribbon.Name = "ribbon";
@@ -281,23 +286,26 @@
             this.barButtonItem4.Id = 26;
             this.barButtonItem4.Name = "barButtonItem4";
             // 
-            // barButtonItem5
+            // btnPhieuMuon
             // 
-            this.barButtonItem5.Caption = "Phiếu mượn";
-            this.barButtonItem5.Id = 27;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.btnPhieuMuon.Caption = "Phiếu mượn";
+            this.btnPhieuMuon.Id = 27;
+            this.btnPhieuMuon.Name = "btnPhieuMuon";
+            this.btnPhieuMuon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhieuMuon_ItemClick);
             // 
-            // barButtonItem6
+            // btnPhieuPhat
             // 
-            this.barButtonItem6.Caption = "Phiếu phạt";
-            this.barButtonItem6.Id = 28;
-            this.barButtonItem6.Name = "barButtonItem6";
+            this.btnPhieuPhat.Caption = "Phiếu phạt";
+            this.btnPhieuPhat.Id = 28;
+            this.btnPhieuPhat.Name = "btnPhieuPhat";
+            this.btnPhieuPhat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhieuPhat_ItemClick);
             // 
-            // barButtonItem7
+            // btnDMDG
             // 
-            this.barButtonItem7.Caption = "Danh mục độc giả";
-            this.barButtonItem7.Id = 29;
-            this.barButtonItem7.Name = "barButtonItem7";
+            this.btnDMDG.Caption = "Danh mục độc giả";
+            this.btnDMDG.Id = 29;
+            this.btnDMDG.Name = "btnDMDG";
+            this.btnDMDG.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDMDG_ItemClick);
             // 
             // barButtonItem8
             // 
@@ -346,14 +354,14 @@
             // ribbonPageGroup10
             // 
             this.ribbonPageGroup10.AllowTextClipping = false;
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnPhieuMuon);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnPhieuPhat);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.Text = "Quản lý mượn trả";
             // 
             // ribbonPageGroup11
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup11.ItemLinks.Add(this.btnDMDG);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Quản lý độc giả";
             // 
@@ -397,6 +405,8 @@
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
             this.ribbonStatusBar.ItemLinks.Add(this.barEditItem1);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 646);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 525);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
@@ -425,11 +435,15 @@
             this.ClientSize = new System.Drawing.Size(933, 549);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
+            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMain";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
+            this.Text = "frmMain";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.Text = "Quản lý thư viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
@@ -475,9 +489,9 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit repositoryItemDateTimeOffsetEdit1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem btnPhieuMuon;
+        private DevExpress.XtraBars.BarButtonItem btnPhieuPhat;
+        private DevExpress.XtraBars.BarButtonItem btnDMDG;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
