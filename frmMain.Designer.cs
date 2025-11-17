@@ -53,12 +53,12 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemDateTimeOffsetEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.rbnHT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbpTK = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpBackup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -72,13 +72,13 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
             // 
+            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(37);
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -105,7 +105,6 @@
             this.barStaticItem1,
             this.barEditItem1,
             this.barButtonItem2,
-            this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
             this.barButtonItem7,
@@ -113,8 +112,10 @@
             this.barButtonItem9,
             this.barButtonItem10});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbon.MaxItemId = 35;
             this.ribbon.Name = "ribbon";
+            this.ribbon.OptionsMenuMinWidth = 412;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbnHT,
             this.rbnRpt});
@@ -269,12 +270,6 @@
             this.barButtonItem2.Id = 25;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Tồn kho";
-            this.barButtonItem4.Id = 26;
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
             // barButtonItem5
             // 
             this.barButtonItem5.Caption = "Phiếu mượn";
@@ -305,6 +300,12 @@
             this.barButtonItem9.Id = 32;
             this.barButtonItem9.Name = "barButtonItem9";
             // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "Danh mục tác giả";
+            this.barButtonItem10.Id = 34;
+            this.barButtonItem10.Name = "barButtonItem10";
+            // 
             // rbnHT
             // 
             this.rbnHT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -327,7 +328,6 @@
             // rbpBackup
             // 
             this.rbpBackup.ItemLinks.Add(this.barButtonItem2);
-            this.rbpBackup.ItemLinks.Add(this.barButtonItem4);
             this.rbpBackup.Name = "rbpBackup";
             this.rbpBackup.Text = "Quản lý tài liệu";
             // 
@@ -386,6 +386,7 @@
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
             this.ribbonStatusBar.ItemLinks.Add(this.barEditItem1);
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 646);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(1089, 30);
@@ -404,12 +405,6 @@
             this.barButtonItem3.Caption = "Danh mục tài liệu";
             this.barButtonItem3.Id = 3;
             this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // barButtonItem10
-            // 
-            this.barButtonItem10.Caption = "Danh mục tác giả";
-            this.barButtonItem10.Id = 34;
-            this.barButtonItem10.Name = "barButtonItem10";
             // 
             // frmMain
             // 
@@ -464,7 +459,6 @@
         private DevExpress.XtraBars.BarEditItem barEditItem1;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit repositoryItemDateTimeOffsetEdit1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
