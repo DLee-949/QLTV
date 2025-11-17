@@ -19,8 +19,22 @@ namespace QLTV
 
         private void frmMuon_Load(object sender, EventArgs e)
         {
-            cTPhieuMuonTableAdapter.Fill(this.qLTVDataSet.CTPhieuMuon);
            
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddDG_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -53,9 +53,10 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemDateTimeOffsetEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPhieuMuon = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPhieuPhat = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDMDG = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
@@ -79,6 +80,7 @@
             // ribbon
             // 
             this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(37);
+            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(26, 24, 26, 24);
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -105,9 +107,10 @@
             this.barStaticItem1,
             this.barEditItem1,
             this.barButtonItem2,
-            this.barButtonItem5,
-            this.barButtonItem6,
-            this.barButtonItem7,
+            this.barButtonItem4,
+            this.btnPhieuMuon,
+            this.btnPhieuPhat,
+            this.btnDMDG,
             this.barButtonItem8,
             this.barButtonItem9,
             this.barButtonItem10});
@@ -116,12 +119,16 @@
             this.ribbon.MaxItemId = 35;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 412;
+            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ribbon.MaxItemId = 35;
+            this.ribbon.Name = "ribbon";
+            this.ribbon.OptionsMenuMinWidth = 283;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbnHT,
             this.rbnRpt});
             this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateTimeOffsetEdit1});
-            this.ribbon.Size = new System.Drawing.Size(1089, 193);
+            this.ribbon.Size = new System.Drawing.Size(933, 158);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btnLogin
@@ -129,12 +136,14 @@
             this.btnLogin.Caption = "Đăng nhập";
             this.btnLogin.Id = 1;
             this.btnLogin.Name = "btnLogin";
+            this.btnLogin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLogin_ItemClick);
             // 
             // btnLogout
             // 
             this.btnLogout.Caption = "Đăng xuất";
             this.btnLogout.Id = 2;
             this.btnLogout.Name = "btnLogout";
+            this.btnLogout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLogout_ItemClick);
             // 
             // btnDMTL
             // 
@@ -269,24 +278,34 @@
             this.barButtonItem2.Caption = "Danh mục tài liệu";
             this.barButtonItem2.Id = 25;
             this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
-            // barButtonItem5
+            // barButtonItem4
             // 
-            this.barButtonItem5.Caption = "Phiếu mượn";
-            this.barButtonItem5.Id = 27;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem4.Caption = "Tồn kho";
+            this.barButtonItem4.Id = 26;
+            this.barButtonItem4.Name = "barButtonItem4";
             // 
-            // barButtonItem6
+            // btnPhieuMuon
             // 
-            this.barButtonItem6.Caption = "Phiếu phạt";
-            this.barButtonItem6.Id = 28;
-            this.barButtonItem6.Name = "barButtonItem6";
+            this.btnPhieuMuon.Caption = "Phiếu mượn";
+            this.btnPhieuMuon.Id = 27;
+            this.btnPhieuMuon.Name = "btnPhieuMuon";
+            this.btnPhieuMuon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhieuMuon_ItemClick);
             // 
-            // barButtonItem7
+            // btnPhieuPhat
             // 
-            this.barButtonItem7.Caption = "Danh mục độc giả";
-            this.barButtonItem7.Id = 29;
-            this.barButtonItem7.Name = "barButtonItem7";
+            this.btnPhieuPhat.Caption = "Phiếu phạt";
+            this.btnPhieuPhat.Id = 28;
+            this.btnPhieuPhat.Name = "btnPhieuPhat";
+            this.btnPhieuPhat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhieuPhat_ItemClick);
+            // 
+            // btnDMDG
+            // 
+            this.btnDMDG.Caption = "Danh mục độc giả";
+            this.btnDMDG.Id = 29;
+            this.btnDMDG.Name = "btnDMDG";
+            this.btnDMDG.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDMDG_ItemClick);
             // 
             // barButtonItem8
             // 
@@ -334,14 +353,14 @@
             // ribbonPageGroup10
             // 
             this.ribbonPageGroup10.AllowTextClipping = false;
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnPhieuMuon);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnPhieuPhat);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.Text = "Quản lý mượn trả";
             // 
             // ribbonPageGroup11
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup11.ItemLinks.Add(this.btnDMDG);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Quản lý độc giả";
             // 
@@ -387,9 +406,11 @@
             this.ribbonStatusBar.ItemLinks.Add(this.barEditItem1);
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 646);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 525);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1089, 30);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(933, 24);
             // 
             // ribbonPageGroup8
             // 
@@ -408,15 +429,22 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1089, 676);
+            this.ClientSize = new System.Drawing.Size(933, 549);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
+            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMain";
             this.Ribbon = this.ribbon;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "frmMain";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Text = "Quản lý thư viện";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).EndInit();
             this.ResumeLayout(false);
@@ -459,9 +487,10 @@
         private DevExpress.XtraBars.BarEditItem barEditItem1;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit repositoryItemDateTimeOffsetEdit1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem btnPhieuMuon;
+        private DevExpress.XtraBars.BarButtonItem btnPhieuPhat;
+        private DevExpress.XtraBars.BarButtonItem btnDMDG;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
