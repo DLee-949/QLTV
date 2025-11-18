@@ -6,12 +6,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace QLTV
 {
     public partial class frmDMDG : Form
     {
+        SqlConnection conn = new SqlConnection();
+        SqlDataAdapter da = new SqlDataAdapter();
+        DataTable dt = new DataTable();
+        string str, sql;
         public frmDMDG()
         {
             InitializeComponent();

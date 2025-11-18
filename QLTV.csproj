@@ -146,6 +146,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLTV_Dataset.xsd</DependentUpon>
     </Compile>
+    <Compile Include="rptReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptReport.Designer.cs">
+      <DependentUpon>rptReport.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +182,9 @@
     </Compile>
     <EmbeddedResource Include="rptDMDG.resx">
       <DependentUpon>rptDMDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReport.resx">
+      <DependentUpon>rptReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
