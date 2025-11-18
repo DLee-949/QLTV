@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtMaPM = new System.Windows.Forms.TextBox();
+            this.txtMaCTPM = new System.Windows.Forms.TextBox();
             this.MaPhieuMuon = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtMaDGPM = new System.Windows.Forms.TextBox();
+            this.txtMaDGCTPM = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtTenDGPM = new System.Windows.Forms.TextBox();
+            this.txtTenDGCTPM = new System.Windows.Forms.TextBox();
             this.TenTaiLieu = new System.Windows.Forms.Label();
             this.TrangThai = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTenTaiLieu = new System.Windows.Forms.TextBox();
             this.NgayMuon = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtHanCTPM = new System.Windows.Forms.TextBox();
             this.HanTra = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNgayMuonCTPM = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comStatus = new System.Windows.Forms.ComboBox();
             this.ThuVien = new System.Windows.Forms.Label();
             this.MaTaiLieu = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaTaiLieu = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txtMaPM
+            // txtMaCTPM
             // 
-            this.txtMaPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaPM.Location = new System.Drawing.Point(147, 118);
-            this.txtMaPM.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMaPM.Name = "txtMaPM";
-            this.txtMaPM.Size = new System.Drawing.Size(213, 23);
-            this.txtMaPM.TabIndex = 13;
+            this.txtMaCTPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaCTPM.Location = new System.Drawing.Point(147, 118);
+            this.txtMaCTPM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaCTPM.Name = "txtMaCTPM";
+            this.txtMaCTPM.Size = new System.Drawing.Size(213, 23);
+            this.txtMaCTPM.TabIndex = 13;
             // 
             // MaPhieuMuon
             // 
@@ -79,14 +79,14 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "Tên độc giả";
             // 
-            // txtMaDGPM
+            // txtMaDGCTPM
             // 
-            this.txtMaDGPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaDGPM.Location = new System.Drawing.Point(147, 198);
-            this.txtMaDGPM.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMaDGPM.Name = "txtMaDGPM";
-            this.txtMaDGPM.Size = new System.Drawing.Size(213, 23);
-            this.txtMaDGPM.TabIndex = 16;
+            this.txtMaDGCTPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaDGCTPM.Location = new System.Drawing.Point(147, 198);
+            this.txtMaDGCTPM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaDGCTPM.Name = "txtMaDGCTPM";
+            this.txtMaDGCTPM.Size = new System.Drawing.Size(213, 23);
+            this.txtMaDGCTPM.TabIndex = 16;
             // 
             // label9
             // 
@@ -99,14 +99,14 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Mã độc giả";
             // 
-            // txtTenDGPM
+            // txtTenDGCTPM
             // 
-            this.txtTenDGPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDGPM.Location = new System.Drawing.Point(147, 244);
-            this.txtTenDGPM.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTenDGPM.Name = "txtTenDGPM";
-            this.txtTenDGPM.Size = new System.Drawing.Size(213, 23);
-            this.txtTenDGPM.TabIndex = 15;
+            this.txtTenDGCTPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDGCTPM.Location = new System.Drawing.Point(147, 244);
+            this.txtTenDGCTPM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenDGCTPM.Name = "txtTenDGCTPM";
+            this.txtTenDGCTPM.Size = new System.Drawing.Size(213, 23);
+            this.txtTenDGCTPM.TabIndex = 15;
             // 
             // TenTaiLieu
             // 
@@ -132,16 +132,16 @@
             this.TrangThai.Text = "Trạng thái";
             this.TrangThai.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox2
+            // txtTenTaiLieu
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(608, 243);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 20);
-            this.textBox2.TabIndex = 19;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtTenTaiLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenTaiLieu.Location = new System.Drawing.Point(608, 243);
+            this.txtTenTaiLieu.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenTaiLieu.Multiline = true;
+            this.txtTenTaiLieu.Name = "txtTenTaiLieu";
+            this.txtTenTaiLieu.Size = new System.Drawing.Size(213, 20);
+            this.txtTenTaiLieu.TabIndex = 19;
+            this.txtTenTaiLieu.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // NgayMuon
             // 
@@ -155,14 +155,14 @@
             this.NgayMuon.Text = "Ngày Mượn";
             this.NgayMuon.Click += new System.EventHandler(this.NgayMuon_Click);
             // 
-            // textBox3
+            // txtHanCTPM
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(147, 439);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 23);
-            this.textBox3.TabIndex = 24;
+            this.txtHanCTPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHanCTPM.Location = new System.Drawing.Point(147, 439);
+            this.txtHanCTPM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHanCTPM.Name = "txtHanCTPM";
+            this.txtHanCTPM.Size = new System.Drawing.Size(213, 23);
+            this.txtHanCTPM.TabIndex = 24;
             // 
             // HanTra
             // 
@@ -176,15 +176,15 @@
             this.HanTra.Text = "Hạn trả";
             this.HanTra.Click += new System.EventHandler(this.HanTra_Click);
             // 
-            // textBox4
+            // txtNgayMuonCTPM
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(147, 389);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(213, 23);
-            this.textBox4.TabIndex = 23;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtNgayMuonCTPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgayMuonCTPM.Location = new System.Drawing.Point(147, 389);
+            this.txtNgayMuonCTPM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNgayMuonCTPM.Name = "txtNgayMuonCTPM";
+            this.txtNgayMuonCTPM.Size = new System.Drawing.Size(213, 23);
+            this.txtNgayMuonCTPM.TabIndex = 23;
+            this.txtNgayMuonCTPM.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label6
             // 
@@ -226,15 +226,15 @@
             this.MaTaiLieu.TabIndex = 32;
             this.MaTaiLieu.Text = "Mã tài liệu";
             // 
-            // textBox1
+            // txtMaTaiLieu
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(608, 197);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 20);
-            this.textBox1.TabIndex = 31;
+            this.txtMaTaiLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaTaiLieu.Location = new System.Drawing.Point(608, 197);
+            this.txtMaTaiLieu.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaTaiLieu.Multiline = true;
+            this.txtMaTaiLieu.Name = "txtMaTaiLieu";
+            this.txtMaTaiLieu.Size = new System.Drawing.Size(213, 20);
+            this.txtMaTaiLieu.TabIndex = 31;
             // 
             // frmCTPM
             // 
@@ -242,22 +242,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 551);
             this.Controls.Add(this.MaTaiLieu);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMaTaiLieu);
             this.Controls.Add(this.ThuVien);
             this.Controls.Add(this.comStatus);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.NgayMuon);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtHanCTPM);
             this.Controls.Add(this.HanTra);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtNgayMuonCTPM);
             this.Controls.Add(this.TenTaiLieu);
             this.Controls.Add(this.TrangThai);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTenTaiLieu);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txtMaDGPM);
+            this.Controls.Add(this.txtMaDGCTPM);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtTenDGPM);
-            this.Controls.Add(this.txtMaPM);
+            this.Controls.Add(this.txtTenDGCTPM);
+            this.Controls.Add(this.txtMaCTPM);
             this.Controls.Add(this.MaPhieuMuon);
             this.Name = "frmCTPM";
             this.Text = "frmCTPM";
@@ -269,23 +269,23 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtMaPM;
+        private System.Windows.Forms.TextBox txtMaCTPM;
         private System.Windows.Forms.Label MaPhieuMuon;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtMaDGPM;
+        private System.Windows.Forms.TextBox txtMaDGCTPM;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtTenDGPM;
+        private System.Windows.Forms.TextBox txtTenDGCTPM;
         private System.Windows.Forms.Label TenTaiLieu;
         private System.Windows.Forms.Label TrangThai;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTenTaiLieu;
         private System.Windows.Forms.Label NgayMuon;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtHanCTPM;
         private System.Windows.Forms.Label HanTra;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNgayMuonCTPM;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comStatus;
         private System.Windows.Forms.Label ThuVien;
         private System.Windows.Forms.Label MaTaiLieu;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaTaiLieu;
     }
 }
