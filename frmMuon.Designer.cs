@@ -173,7 +173,6 @@
             this.label2.Size = new System.Drawing.Size(105, 17);
             this.label2.TabIndex = 12;
             this.label2.Text = "Mã phiếu mượn";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtMaDGPM
             // 
