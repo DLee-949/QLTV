@@ -89,6 +89,11 @@ namespace QLTV
             f.ShowDialog();
         }
 
+        private void btnCTPM1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         private void grdPhieuMuon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             NapCT();

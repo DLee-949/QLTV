@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraReports.UI.XRWatermark xrWatermark1 = new DevExpress.XtraReports.UI.XRWatermark();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.VerticalDetail = new DevExpress.XtraReports.UI.VerticalDetailBand();
@@ -84,9 +87,17 @@
             // 
             this.BottomMargin.Name = "BottomMargin";
             // 
+            // Detail
+            // 
+            this.Detail.Name = "Detail";
+            // 
             // ReportHeader
             // 
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Name = "PageHeader";
             // 
             // ReportFooter
             // 
@@ -398,7 +409,9 @@
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
             this.BottomMargin,
+            this.Detail,
             this.ReportHeader,
+            this.PageHeader,
             this.ReportFooter,
             this.PageFooter,
             this.VerticalDetail,
@@ -410,9 +423,6 @@
             this.DataSource = this.qltV_Dataset1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Version = "24.1";
-            ((System.ComponentModel.ISupportInitialize)(this.qltV_Dataset1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -421,7 +431,9 @@
 
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
+        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.VerticalDetailBand VerticalDetail;
