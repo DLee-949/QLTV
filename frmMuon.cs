@@ -86,7 +86,7 @@ namespace QLTV
         private void btnCTPM_Click(object sender, EventArgs e)
         {
             frmCTPM f = new frmCTPM();
-            f.
+            
             f.ShowDialog();
         }
 
