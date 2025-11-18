@@ -25,11 +25,10 @@ namespace QLTV
         {
             try
             {
-                int i = grdDMDG.CurrentRow.Index;
-                txtMaDG.Text = grdDMDG.Rows[i].Cells["MaDocGia"].Value.ToString();
-                txtTenDG.Text = grdDMDG.Rows[i].Cells["TenDocGia"].Value.ToString();
-                txtEmail.Text = grdDMDG.Rows[i].Cells["Email"].Value.ToString();
-                txtSdt.Text = grdDMDG.Rows[i].Cells["SDT"].Value.ToString();
+                int i = grdPhieuMuon.CurrentRow.Index;
+                txtMaPM.Text = grdPhieuMuon.Rows[i].Cells["MaPhieuMuon"].Value.ToString();
+                txtMaDGPM.Text = grdPhieuMuon.Rows[i].Cells["MaDocGia"].Value.ToString();
+                txtTenDGPM.Text = grdPhieuMuon.Rows[i].Cells["TenDocGia"].Value.ToString();
             }
             catch (Exception)
             {
@@ -38,7 +37,14 @@ namespace QLTV
         }
         private void frmMuon_Load(object sender, EventArgs e)
         {
-            
+            str = "Data Source = PING; Initial Catalog = QLTV1; Integrated Security = True;";
+            conn.ConnectionString = str;
+            conn.Open();
+            sql = "select MaPhieuMuon, MaDocGia, TenDocGia from PhieuMuon";
+            da = new SqlDataAdapter(sql, conn);
+            da.Fill(dt);
+            grdPhieuMuon.DataSource = dt;
+            NapCT();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -77,9 +83,16 @@ namespace QLTV
 
         }
 
+        private void btnCTPM_Click(object sender, EventArgs e)
+        {
+            frmCTPM f = new frmCTPM();
+            f.
+            f.ShowDialog();
+        }
+
         private void grdPhieuMuon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            NapCT();
         }
     }
 }

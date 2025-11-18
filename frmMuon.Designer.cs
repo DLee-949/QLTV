@@ -43,7 +43,8 @@
             this.txtMaDGPM = new System.Windows.Forms.TextBox();
             this.txtMaPM = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCTPM = new System.Windows.Forms.Button();
+            this.btnAddPM = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdPhieuMuon)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cTPhieuMuonBindingSource)).BeginInit();
@@ -193,21 +194,32 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // button1
+            // btnCTPM
             // 
-            this.button1.Location = new System.Drawing.Point(529, 349);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 52);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCTPM.Location = new System.Drawing.Point(529, 346);
+            this.btnCTPM.Name = "btnCTPM";
+            this.btnCTPM.Size = new System.Drawing.Size(219, 47);
+            this.btnCTPM.TabIndex = 14;
+            this.btnCTPM.Text = "Chi tiết phiếu mượn";
+            this.btnCTPM.UseVisualStyleBackColor = true;
+            this.btnCTPM.Click += new System.EventHandler(this.btnCTPM_Click);
+            // 
+            // btnAddPM
+            // 
+            this.btnAddPM.Location = new System.Drawing.Point(529, 408);
+            this.btnAddPM.Name = "btnAddPM";
+            this.btnAddPM.Size = new System.Drawing.Size(219, 47);
+            this.btnAddPM.TabIndex = 14;
+            this.btnAddPM.Text = "Lập phiếu mượn";
+            this.btnAddPM.UseVisualStyleBackColor = true;
             // 
             // frmMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 789);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddPM);
+            this.Controls.Add(this.btnCTPM);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -241,6 +253,7 @@
         private System.Windows.Forms.TextBox txtMaDGPM;
         private System.Windows.Forms.TextBox txtMaPM;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCTPM;
+        private System.Windows.Forms.Button btnAddPM;
     }
 }
