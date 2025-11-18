@@ -181,7 +181,7 @@ namespace QLTV
 
         private void frmDMDG_Load(object sender, EventArgs e)
         {
-            str = "Data Source = DESKTOP-MVG881B; Initial Catalog = QLTV1; Integrated Security = True;";
+            str = "Data Source = DESKTOP-MVG881B; Initial Catalog = QLTV; Integrated Security = True;";
             conn.ConnectionString = str;
             conn.Open();
             sql = "select MaDocGia, TenDocGia, Email, SDT from DocGia";

@@ -53,7 +53,6 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemDateTimeOffsetEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhieuMuon = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhieuPhat = new DevExpress.XtraBars.BarButtonItem();
             this.btnDMDG = new DevExpress.XtraBars.BarButtonItem();
@@ -79,7 +78,6 @@
             // 
             // ribbon
             // 
-            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(37);
             this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(26, 24, 26, 24);
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -107,7 +105,6 @@
             this.barStaticItem1,
             this.barEditItem1,
             this.barButtonItem2,
-            this.barButtonItem4,
             this.btnPhieuMuon,
             this.btnPhieuPhat,
             this.btnDMDG,
@@ -115,10 +112,6 @@
             this.barButtonItem9,
             this.barButtonItem10});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ribbon.MaxItemId = 35;
-            this.ribbon.Name = "ribbon";
-            this.ribbon.OptionsMenuMinWidth = 412;
             this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbon.MaxItemId = 35;
             this.ribbon.Name = "ribbon";
@@ -280,12 +273,6 @@
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Tồn kho";
-            this.barButtonItem4.Id = 26;
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
             // btnPhieuMuon
             // 
             this.btnPhieuMuon.Caption = "Phiếu mượn";
@@ -347,7 +334,6 @@
             // rbpBackup
             // 
             this.rbpBackup.ItemLinks.Add(this.barButtonItem2);
-            this.rbpBackup.ItemLinks.Add(this.barButtonItem4);
             this.rbpBackup.Name = "rbpBackup";
             this.rbpBackup.Text = "Quản lý tài liệu";
             // 
@@ -405,8 +391,6 @@
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
             this.ribbonStatusBar.ItemLinks.Add(this.barEditItem1);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 646);
-            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 525);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
@@ -441,11 +425,9 @@
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "frmMain";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.Text = "Quản lý thư viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).EndInit();
             this.ResumeLayout(false);
@@ -488,7 +470,6 @@
         private DevExpress.XtraBars.BarEditItem barEditItem1;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit repositoryItemDateTimeOffsetEdit1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem btnPhieuMuon;
         private DevExpress.XtraBars.BarButtonItem btnPhieuPhat;
         private DevExpress.XtraBars.BarButtonItem btnDMDG;
