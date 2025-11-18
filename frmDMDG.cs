@@ -28,11 +28,18 @@ namespace QLTV
 
         public void NapCT()
         {
-            int i = grdDMDG.CurrentRow.Index;
-            txtMaDG.Text = grdDMDG.Rows[i].Cells["MaDocGia"].Value.ToString();
-            txtTenDG.Text = grdDMDG.Rows[i].Cells["TenDocGia"].Value.ToString();
-            txtEmail.Text = grdDMDG.Rows[i].Cells["Email"].Value.ToString();
-            txtSdt.Text = grdDMDG.Rows[i].Cells["SDT"].Value.ToString();
+            try
+            {
+                int i = grdDMDG.CurrentRow.Index;
+                txtMaDG.Text = grdDMDG.Rows[i].Cells["MaDocGia"].Value.ToString();
+                txtTenDG.Text = grdDMDG.Rows[i].Cells["TenDocGia"].Value.ToString();
+                txtEmail.Text = grdDMDG.Rows[i].Cells["Email"].Value.ToString();
+                txtSdt.Text = grdDMDG.Rows[i].Cells["SDT"].Value.ToString();
+            }
+            catch (Exception )
+            {
+
+            }
         }
 
         private void btnAddDG_Click(object sender, EventArgs e)
