@@ -26,11 +26,22 @@ namespace QLTV.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HEHE;Initial Catalog=QLTV;Integrated Security=True;TrustServerCertifi" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PING;Initial Catalog=QLTV;Integrated Security=True;TrustServerCertifi" +
             "cate=True")]
         public string QLTVConnectionString {
             get {
                 return ((string)(this["QLTVConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-MVG881B;Initial Catalog=QLTV;Integrated Security=True;TrustSe" +
+            "rverCertificate=True")]
+        public string QLTVConnectionString1 {
+            get {
+                return ((string)(this["QLTVConnectionString1"]));
             }
         }
     }
