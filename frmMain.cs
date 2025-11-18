@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraBars;
+using DevExpress.XtraReports.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -112,6 +113,12 @@ namespace QLTV
         private void frmMain_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            rptDMDG f = new rptDMDG();
+            f.ShowPreview();
         }
     }
 }

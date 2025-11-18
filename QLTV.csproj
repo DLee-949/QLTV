@@ -177,6 +177,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptCTPM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCTPM.Designer.cs">
+      <DependentUpon>rptCTPM.cs</DependentUpon>
+    </Compile>
     <Compile Include="rptDMDG.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -235,6 +241,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rptCTPM.resx">
+      <DependentUpon>rptCTPM.cs</DependentUpon>
     <EmbeddedResource Include="rptInPhieuPhat.resx">
       <DependentUpon>rptInPhieuPhat.cs</DependentUpon>
     </EmbeddedResource>
