@@ -87,7 +87,7 @@ namespace QLTV
 
         private void frmDmtl_Load(object sender, EventArgs e)
         {
-            str = "Data Source=PING; Initial Catalog = QLTV; Integrated Security=True";
+            str = "Data Source=PING; Initial Catalog = QLTV1; Integrated Security=True";
             conn.ConnectionString = str;
             conn.Open();
             sql = "select MaTaiLieu , TenTaiLieu, MaTacGia , LoaiTaiLieu , SoLuong from TaiLieu";

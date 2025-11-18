@@ -188,17 +188,6 @@
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
-    <None Include="PhieuMuon.xsc">
-      <DependentUpon>PhieuMuon.xsd</DependentUpon>
-    </None>
-    <None Include="PhieuMuon.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PhieuMuon.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PhieuMuon.xss">
-      <DependentUpon>PhieuMuon.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -208,50 +197,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QLTVDataSet.xsc">
-      <DependentUpon>QLTVDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLTVDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLTVDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLTVDataSet.xss">
-      <DependentUpon>QLTVDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLTVDataSet1.xsc">
-      <DependentUpon>QLTVDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="QLTVDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLTVDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLTVDataSet1.xss">
-      <DependentUpon>QLTVDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="QLTVDataSet2.xsc">
-      <DependentUpon>QLTVDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="QLTVDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLTVDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLTVDataSet2.xss">
-      <DependentUpon>QLTVDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="QLTVDataSet3.xsc">
-      <DependentUpon>QLTVDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="QLTVDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLTVDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLTVDataSet3.xss">
-      <DependentUpon>QLTVDataSet3.xsd</DependentUpon>
-    </None>
     <None Include="QLTV_Dataset.xsc">
       <DependentUpon>QLTV_Dataset.xsd</DependentUpon>
     </None>
