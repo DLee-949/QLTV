@@ -48,7 +48,7 @@
             this.txtMaTaiLieu = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnInPM = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -201,7 +201,7 @@
             "Đã trả",
             "Quá hạn"});
             this.comStatus.Location = new System.Drawing.Point(795, 38);
-            this.comStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comStatus.Margin = new System.Windows.Forms.Padding(4);
             this.comStatus.Name = "comStatus";
             this.comStatus.Size = new System.Drawing.Size(283, 24);
             this.comStatus.TabIndex = 29;
@@ -265,21 +265,21 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnInPM);
             this.groupBox2.Location = new System.Drawing.Point(36, 348);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1120, 83);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             // 
-            // button1
+            // btnInPM
             // 
-            this.button1.Location = new System.Drawing.Point(856, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(249, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "In phiếu mượn";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInPM.Location = new System.Drawing.Point(829, 21);
+            this.btnInPM.Name = "btnInPM";
+            this.btnInPM.Size = new System.Drawing.Size(249, 45);
+            this.btnInPM.TabIndex = 0;
+            this.btnInPM.Text = "In phiếu mượn";
+            this.btnInPM.UseVisualStyleBackColor = true;
             // 
             // frmCTPM
             // 
@@ -289,7 +289,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ThuVien);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCTPM";
             this.Text = "frmCTPM";
             this.Load += new System.EventHandler(this.frmCTPM_Load);
@@ -323,6 +323,6 @@
         private System.Windows.Forms.TextBox txtMaTaiLieu;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInPM;
     }
 }
