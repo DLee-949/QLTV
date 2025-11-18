@@ -1,17 +1,26 @@
-﻿using System;
+﻿using DevExpress.CodeParser;
+using DevExpress.XtraReports.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace QLTV
 {
     public partial class frmDMDG : Form
     {
+        SqlConnection conn = new SqlConnection();
+        SqlDataAdapter da = new SqlDataAdapter();
+        DataTable dt = new DataTable();
+        string str, sql;
+        Boolean addnewflag = false;
         public frmDMDG()
         {
             InitializeComponent();
@@ -147,6 +156,11 @@ namespace QLTV
             btnUpdateDG.Enabled = false;
         }
 
+        private void txtGTDMDG_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
         private void frmDMDG_Load(object sender, EventArgs e)
         {
             str = "Data Source = PING; Initial Catalog = QLTV1; Integrated Security = True;";
@@ -163,4 +177,4 @@ namespace QLTV
 
         
     }
-}
+
