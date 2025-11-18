@@ -97,6 +97,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCapNhatPhieuPhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatPhieuPhat.Designer.cs">
+      <DependentUpon>frmCapNhatPhieuPhat.cs</DependentUpon>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +138,37 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNhapLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapLieu.Designer.cs">
+      <DependentUpon>frmNhapLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuPhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuPhat.Designer.cs">
+      <DependentUpon>frmPhieuPhat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTacGia.Designer.cs">
+      <DependentUpon>frmQLTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTV.cs" />
+    <Compile Include="QLTVDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rptInPhieuPhat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInPhieuPhat.Designer.cs">
+      <DependentUpon>rptInPhieuPhat.cs</DependentUpon>
     <Compile Include="frmMuon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,9 +194,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLTV_Dataset.xsd</DependentUpon>
     </Compile>
+    <Compile Include="rptReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptReport.Designer.cs">
+      <DependentUpon>rptReport.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCapNhatPhieuPhat.resx">
+      <DependentUpon>frmCapNhatPhieuPhat.cs</DependentUpon>
     <EmbeddedResource Include="frmCTPM.resx">
       <DependentUpon>frmCTPM.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +220,14 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapLieu.resx">
+      <DependentUpon>frmNhapLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuPhat.resx">
+      <DependentUpon>frmPhieuPhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTacGia.resx">
+      <DependentUpon>frmQLTacGia.cs</DependentUpon>
     <EmbeddedResource Include="frmMuon.resx">
       <DependentUpon>frmMuon.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,9 +243,14 @@
     </Compile>
     <EmbeddedResource Include="rptCTPM.resx">
       <DependentUpon>rptCTPM.cs</DependentUpon>
+    <EmbeddedResource Include="rptInPhieuPhat.resx">
+      <DependentUpon>rptInPhieuPhat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptDMDG.resx">
       <DependentUpon>rptDMDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReport.resx">
+      <DependentUpon>rptReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -215,6 +272,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QLTVDataSet.xsc">
+      <DependentUpon>QLTVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTVDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTVDataSet.xss">
+      <DependentUpon>QLTVDataSet.xsd</DependentUpon>
     <None Include="QLTV_Dataset.xsc">
       <DependentUpon>QLTV_Dataset.xsd</DependentUpon>
     </None>
