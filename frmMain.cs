@@ -73,8 +73,18 @@ namespace QLTV
 
         private void btnPhieuMuon_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frmMuon f = new frmMuon();
-            f.ShowDialog();
+            this.IsMdiContainer = true;
+            foreach (Form child in this.MdiChildren)
+            {
+                if (child is frmMuon)
+                {
+                    child.Activate();
+                    return;
+                }
+            }
+            var f1 = new frmMuon();
+            f1.MdiParent = this;
+            f1.Show();
         }
 
         private void btnPhieuPhat_ItemClick(object sender, ItemClickEventArgs e)
