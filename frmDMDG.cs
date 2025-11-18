@@ -158,7 +158,18 @@ namespace QLTV
 
         private void txtGTDMDG_TextChanged(object sender, EventArgs e)
         {
-            
+            if (comTruongDMDG.SelectedIndex < 0)
+            {
+                return;
+            }
+            else
+            {
+                string column = comTruongDMDG.SelectedItem.ToString();
+                string keyword = txtGTDMDG.Text.Replace("'", "''");
+                DataView dv = dt.DefaultView;
+                dv.RowFilter = $"{column} LIKE '%{keyword}%'";
+            }
+            NapCT();
         }
 
         private void frmDMDG_Load(object sender, EventArgs e)
