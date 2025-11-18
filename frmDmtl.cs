@@ -183,7 +183,20 @@ namespace QLTV
 
         private void btnReport_Click(object sender, EventArgs e)
         {
+            var rpt = new rptReport();
+            string filterSql = "SELECT * FROM TaiLieu WHERE " + comTruong.Text + " = @val";
+            DataTable dt2 = new DataTable();
+            using (var adapter = new SqlDataAdapter(filterSql, conn))
+            {
+                adapter.SelectCommand.Parameters.AddWithValue("@val", comGT.Text);
+                adapter.Fill(dt2);
+            }
+            var ds = new DataSet();
+            ds.Tables.Add(dt2);
+            rpt.DataSource = ds;
+            rpt.DataMember = "TaiLieu";
 
+            rpt.ShowPreview();
         }
 
         private void btnReport_Click_1(object sender, EventArgs e)
@@ -204,9 +217,29 @@ namespace QLTV
             rpt.ShowPreview();
         }
 
+        private void btnLast_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNext_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrevious_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFirst_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void frmDmtl_Load(object sender, EventArgs e)
         {
-            str = "Data Source=MSI; Initial Catalog = QLTV; Integrated Security=True";
+            str = "Data Source=DESKTOP-MVG881B; Initial Catalog = QLTV; Integrated Security=True";
             conn.ConnectionString = str;
             conn.Open();
             sql = "select MaTaiLieu , TenTaiLieu, MaTacGia , LoaiTaiLieu , SoLuong from TaiLieu";
