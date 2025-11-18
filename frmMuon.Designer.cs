@@ -202,6 +202,7 @@
             this.btnCTPM.TabIndex = 14;
             this.btnCTPM.Text = "Chi tiết phiếu mượn";
             this.btnCTPM.UseVisualStyleBackColor = true;
+            this.btnCTPM.Click += new System.EventHandler(this.btnCTPM_Click);
             // 
             // btnAddPM
             // 
