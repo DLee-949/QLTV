@@ -28,6 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.SuspendLayout();
+            // 
+            // frmCTPM
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1123, 621);
+            this.Name = "frmCTPM";
+            this.Text = "frmCTPM";
+            this.ResumeLayout(false);
             this.txtMaCTPM = new System.Windows.Forms.TextBox();
             this.MaPhieuMuon = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
